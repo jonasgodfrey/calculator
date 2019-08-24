@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>My Calculator</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="bootstrap.min.css">
+    </head>
+<body>
+    <h1>Calculator</h1><br>
+    <div class="col-md-4">
+<!-- Values input -->
+    First Number: <input type="text" id="num1" class="form-control" placeholder="0.0">
+    <br><br>
+    Second Number: <input type="text" id="num2" class="form-control" placeholder="0.0"><br>
+    <br>
+<!-- Select Operations -->
+    Choose Operation:
+    <select id="operation" class="form-control">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+   
+   <br> <input type="Button" value="=" onclick="calculate();" class="btn btn-primary">
+    <br>
+    <br>
+<!-- Display Result -->
+    Your Result: <input type="text" id="result" class="form-control" readonly><br><br>  
+</div>
+<script src="script.js"></script>
+</body>
+</html>
